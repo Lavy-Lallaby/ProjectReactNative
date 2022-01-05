@@ -1,10 +1,12 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { Button, StyleSheet, Text, View } from 'react-native'
 
 const AboutScreen = () => {
     return (
         <View style={styles.container}>
             <Text>มีสิ่งอื่นอีกไหม</Text>
+            <Button title='Go to About Page again...' 
+            onPress={()=>navigation.push('About')}></Button>
         </View>
     )
 }
