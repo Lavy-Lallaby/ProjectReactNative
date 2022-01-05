@@ -7,7 +7,8 @@ const HomeScreen = ({ navigation }) => {
             <Text>แต่เขาไม่คิด</Text>
             <Button
                 title="Go to About Me"
-                onPress={() => navigation.navigate('About Me')}
+                onPress={() => navigation.navigate('About Me',
+                {email:'Jakkit_st@tni.ac.th'})}
             ></Button>
         </View>
     )
